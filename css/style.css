@@ -1142,4 +1142,13 @@ a:focus {
   background-color: #fafafa;
   
 }
+
+.submitedgit {
+    max-width: 600px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
 /*# sourceMappingURL=style.css.map */
