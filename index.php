@@ -34,6 +34,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <?php include 'cvldb.php'; ?>
 
 </head>
 
@@ -69,7 +70,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <img src="images/logo.png" alt="">
             </a>
 
@@ -82,7 +83,7 @@
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="about.html"> About</a>
@@ -133,102 +134,16 @@
       </div>
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item-active">
             <div class="container ">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <div class="play_btn">
-                      <button>
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                    <h1>
-                      Mico <br>
-                      <span>
-                        Hospital
-                      </span>
-                    </h1>
-                    <p>
-                      when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                    </p>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.jpg" alt="">
-                  </div>
-                </div>
+                <?php 
+                slider ()
+                ?>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <div class="play_btn">
-                      <button>
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                    <h1>
-                      Mico <br>
-                      <span>
-                        Hospital
-                      </span>
-                    </h1>
-                    <p>
-                      when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                    </p>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <div class="play_btn">
-                      <button>
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                    <h1>
-                      Mico <br>
-                      <span>
-                        Hospital
-                      </span>
-                    </h1>
-                    <p>
-                      when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                    </p>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        
         </div>
         <div class="carousel_btn-box">
           <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
