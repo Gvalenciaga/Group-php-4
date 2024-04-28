@@ -196,4 +196,44 @@ function testimonials() {
       </div>';
     };
 };
+function nav() {
+    $navs = [
+        [
+            'class' => 'nav-item active',
+            'a' => 'HOME',
+            'link' => 'index.php',
+        ],
+        [
+            'class' => 'nav-item',
+            'a' => 'ABOUT',
+            'link' => 'about.html',
+        ],
+        [
+            'class' => 'nav-item',
+            'a' => 'TREATMENT',
+            'link' => 'treatment.html',
+        ],
+        [
+            'class' => 'nav-item',
+            'a' => 'DOCTORS',
+            'link' => 'doctor.html',
+        ],
+        [
+            'class' => 'nav-item',
+            'a' => 'TESTIMONIAL',
+            'link' => 'testimonial.html',
+        ],
+        [
+            'class' => 'nav-item',
+            'a' => 'CONTACT US',
+            'link' => 'contact.html',
+        ],
+    ];
+
+    foreach($navs as $nav) {
+       echo '<li class="'. $nav['class'] .'">
+                <a class="nav-link" href="'. $nav['link'] .'">'. $nav['a'] .' <span class="sr-only">(current)</span></a>
+            </li>';
+    };
+};
 ?>
